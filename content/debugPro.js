@@ -21,7 +21,7 @@ function parseTest(s) {
     result = ""
     for (let i = 0; i < s.length; i++) {
         if (s[i][0] == '$' && s[i][1] == ' ') {
-            result += "echo \"" + s[i].substring(2) + "\" && " + s[i].substring(2) + " && ";
+            result += "echo \"" + s + "\" && " + s[i].substring(2) + " && ";
         }
     }
 
